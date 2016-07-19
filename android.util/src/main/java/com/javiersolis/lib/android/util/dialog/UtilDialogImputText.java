@@ -7,7 +7,9 @@ import android.widget.EditText;
 
 
 /**
- * Created by Javier Solis @JavierTwiteando  @PineappleTic on 10/12/15.
+ * by Javier Solis @JavierTwiteando
+ * Github http://bit.ly/onGithub
+ * Company @
  */
 public class UtilDialogImputText
 {

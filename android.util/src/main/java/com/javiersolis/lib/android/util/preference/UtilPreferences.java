@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Created by Javier Solis @JavierTwiteando  @PineappleTic on 31/10/15.
+ * by Javier Solis @JavierTwiteando
+ * Github http://bit.ly/onGithub
  */
 public class UtilPreferences {
-
 
 
     //util
@@ -23,9 +23,26 @@ public class UtilPreferences {
         pref.edit().putString(key, data).apply();
     }
 
+
+
     public static String getString(Context context, String key )
     {
         SharedPreferences pref=getPref(context);
         return pref.getString(key, null);
     }
+
+
+    public static void putBoolean(Context context, String key, boolean value)
+    {
+        SharedPreferences pref = getPref(context);
+        pref.edit().putBoolean(key, value).apply();
+    }
+
+    public static boolean getBoolean(Context context, String key )
+    {
+        SharedPreferences pref=getPref(context);
+        return pref.getBoolean(key,false);
+    }
+
+
 }

@@ -8,7 +8,7 @@ import android.net.Uri;
  * @author Javier Solis Flores
  *
  */
-public class Email {
+public class UtilEmail {
 	public static void enviarCorreo(Activity activity, String correoDestino,
 									String asunto, String mensaje) {
 		Intent send = new Intent(Intent.ACTION_SENDTO);
