@@ -40,4 +40,18 @@ public class UtilAppInfo
 
         return null;
     }
+
+
+    public String getVersionName(Context context) {
+        String versionCode = "1.0";
+        try {
+            versionCode = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return versionCode;
+    }
+
+
 }
